@@ -34,20 +34,23 @@
       </div>
     </div>
   </section>
+  
   <script>
-   
-   var modal=document.querySelector('.modal');
-   var galleryItems=document.querySelectorAll('.figure');
-   galleryItems.forEach(item => {
-    let itemId=item.id;
-    item.onclick=function(){
-         modal.children[1].innerHTML=itemId;
-         modal.style.visibility='visible';
+
+    var modal=document.querySelector('.modal');
+    var galleryItems=document.querySelectorAll('.figure');
+
+    galleryItems.forEach(item => {
+      let itemId=item.id;
+      item.onclick=function(){
+          modal.children[1].innerHTML=itemId;
+          modal.style.visibility='visible';
+      }
+    })
+
+    modal.children[0].onclick=function(){
+      modal.style.visibility='hidden';
     }
-   })
-   modal.children[0].onclick=function(){
-    modal.style.visibility='hidden';
-   }
   </script>
 </body>
 </html>
