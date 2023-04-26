@@ -78,14 +78,14 @@ figcaption h3{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 350px;
-  height: 350px;
+  width: 80%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
   background-color: #e84540;
-  visibility: hidden;
+  visibility:hidden;
 }
 .close-modal{
   flex: 1;
@@ -99,3 +99,10 @@ figcaption h3{
 .modal div{
   flex: 1;
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ .modal{
+  width:45%;
+  height:65%;
+ }
+} 
