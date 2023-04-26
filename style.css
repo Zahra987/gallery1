@@ -32,7 +32,8 @@ figcaption::before{
   width: 600px;
   height: 350px;
   transform: translate(-50%,-50%) skew(45deg);
-  border: 250px solid rgba(0, 0, 0,0.75);
+  border-left: 250px solid rgba(0, 0, 0,0.75);
+  border-right: 250px solid rgba(0, 0, 0,0.75);
   transition:all 0.3s linear;
 }
 .figure:hover figcaption::before{
@@ -65,11 +66,12 @@ figcaption{
 figcaption h3{
   color: #fff;
   background-color: black;
-  font-size:1.4em;
+  font-size:1.1em;
   padding: 5px 10px;
   border: 2px solid #fff;
   display: none;
   width: 45%;
+  text-align: center;
 }
 .modal{
   position: fixed;
@@ -87,12 +89,12 @@ figcaption h3{
 }
 .close-modal{
   flex: 1;
- display: flex;
- align-items:start;
- color: black;
- margin-right: auto;
- padding-left: 12px;
- padding-top: 10px;
+  display: flex;
+  align-items:start;
+  color: black;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-top: 10px;
 }
 .modal div{
   flex: 1;
